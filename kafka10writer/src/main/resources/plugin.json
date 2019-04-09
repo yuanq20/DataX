@@ -1,0 +1,6 @@
+{
+    "name": "kafka10writer",
+    "class": "com.alibaba.datax.plugin.writer.kafka10writer.Kafka10Writer",
+    "description": "kafka1.0.2 writer.",
+    "developer": "qinyuan"
+}

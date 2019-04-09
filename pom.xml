@@ -44,7 +44,7 @@
         <module>core</module>
         <module>transformer</module>
 
-        <!-- reader -->
+        <!-- reader
         <module>mysqlreader</module>
         <module>drdsreader</module>
         <module>sqlserverreader</module>
@@ -62,8 +62,8 @@
         <module>rdbmsreader</module>
         <module>hbase11xreader</module>
         <module>hbase094xreader</module>
-
-        <!-- writer -->
+-->
+        <!-- writer
         <module>mysqlwriter</module>
         <module>drdswriter</module>
         <module>odpswriter</module>
@@ -85,12 +85,14 @@
         <module>hbase11xsqlwriter</module>
         <module>hbase11xsqlreader</module>
         <module>elasticsearchwriter</module>
-
-        <!-- common support module -->
+-->
+        <!-- common support module
         <module>plugin-rdbms-util</module>
         <module>plugin-unstructured-storage-util</module>
         <module>hbase20xsqlreader</module>
         <module>hbase20xsqlwriter</module>
+        -->
+        <module>kafka10writer</module>
     </modules>
 
     <dependencyManagement>

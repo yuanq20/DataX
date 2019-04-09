@@ -1,0 +1,13 @@
+{
+    "name": "kafka10writer",
+    "parameter": {
+        "acks": "1",
+        "batchSize": 16384,
+        "bootstrapServers": "10.204.243.38:9092,10.204.243.39:9092,10.204.243.40:9092",
+        "bufferMemory": 33554432,
+        "fieldDelimiter": "$$",
+        "lingerMs": 100,
+        "retries": 3,
+        "topic": "t_qinyuan"
+    }
+}
