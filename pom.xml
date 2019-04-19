@@ -69,7 +69,6 @@
         <module>odpswriter</module>
         <module>txtfilewriter</module>
         <module>ftpwriter</module>
-        <module>hdfswriter</module>
         <module>streamwriter</module>
         <module>otswriter</module>
         <module>oraclewriter</module>
@@ -86,12 +85,15 @@
         <module>hbase11xsqlreader</module>
         <module>elasticsearchwriter</module>
 -->
+        <module>hdfswriter</module>
+
+
         <!-- common support module
         <module>plugin-rdbms-util</module>
-        <module>plugin-unstructured-storage-util</module>
         <module>hbase20xsqlreader</module>
         <module>hbase20xsqlwriter</module>
         -->
+        <module>plugin-unstructured-storage-util</module>
         <module>kafka10writer</module>
     </modules>
 
@@ -200,4 +202,31 @@
             </plugin>
         </plugins>
     </build>
+
+    <!--配置私服工厂 -->
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <url>http://nexus.fcbox.com/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <url>http://nexus.fcbox.com/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
